@@ -1,0 +1,50 @@
+/* Corpo */
+body {
+    background-color: thistle;
+    font: normal 12pt Arial;
+}
+
+/* Créditos */
+footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Definir o estilo dos botões usados ​​para abrir e fechar o painel do acordeão */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Adicione uma cor de fundo ao botão se ele for clicado (adicione a classe .active com JS), e quando você mover o mouse sobre ela (passe o mouse) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Definir o estilo do painel de acordeão. Nota: oculto por padrão */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+/* Adicionar Icones */
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
